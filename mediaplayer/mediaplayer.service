@@ -1,0 +1,10 @@
+[Unit]
+Description=Mediaplayer Tool
+
+[Service]
+Type=simple
+ExecStart=/home/pi/scripts/Digi_Stuff/mediaplayer.py
+ExecStartPost=/bin/sleep 1
+
+[Install]
+WantedBy=multi-user.target
