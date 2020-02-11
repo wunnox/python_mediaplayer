@@ -24,7 +24,7 @@ args = parser.parse_args()
 
 #Config-File einlesen
 config = configparser.ConfigParser()
-config.read('mediaplayer.cfg')
+config.read('/etc/mediaplayer.cfg')
 
 #Config-Daten zuordnen
 med1=config['MEDIEN']['med1']

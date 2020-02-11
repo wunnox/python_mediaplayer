@@ -13,9 +13,9 @@
 ##############################################
 
 #Variablen
-system_dire="/etc/systemd/system"
+system_dir="/etc/systemd/system"
 bin_dir="/usr/local/bin"
-cfg_dir="/etc"
+etc_dir="/etc"
 
 #Verzeichnisse prüfen
 if [ -d $system_dir ]
