@@ -40,6 +40,7 @@ echo "Kopiere Files an richtige Stelle"
 cp mediaplayer.py $bin_dir
 cp mediaplayer.cfg $etc_dir
 cp mediaplayer.service $system_dir
+chmod 755 $bin_dir/mediaplayer.py
 
 #omxplaxer installieren
 echo "Installieren omxplayer"
