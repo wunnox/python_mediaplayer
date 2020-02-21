@@ -1,0 +1,20 @@
+Mediaplayer, welcher mittels Knopfdruck ein Video abgespielt
+
+Programmiert durch:
+
+Peter Christen
+Computer Systems Support GmbH (Schweiz)
+Postfach 1368
+3110 Münsingen
+
+Alle Rechte vorbehalten
+
+Zum installieren folgendes Kommando ausführen:
+sudo INSTALL_mediaplayer_nb.bash
+
+Zum löschen folgendes Kommando ausführen:
+sudo INSTALL_mediaplayer_nb.bash -d
+
+Benötigte Hardware:
+- Raspberry Pi 3
+- Arcade Board

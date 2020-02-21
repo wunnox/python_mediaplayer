@@ -1,0 +1,10 @@
+[Unit]
+Description=Mediaplayer für Schweizerische Nationalbibliothek
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/mediaplayer_nb.py
+ExecStartPost=/bin/sleep 1
+
+[Install]
+WantedBy=multi-user.target
