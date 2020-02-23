@@ -57,10 +57,6 @@ then
    fi
 fi
 
-#Setze Boot auf multi-user.target
-echo "Setze Boot auf multi-user.target"
-systemctl set-default multi-user.target
-
 #Kopiere die Files
 echo "Kopiere Files an die richtige Stelle"
 cp mediaplayer_nb.py $bin_dir
@@ -72,12 +68,17 @@ cp StartBild1.jpeg $bild_dir
 chmod 755 $bin_dir/mediaplayer_nb.py
 chmod 755 $bin_dir/mediaplayer_modul_nb.so
 
+#Setze Boot auf multi-user.target
+echo "Setze Boot auf multi-user.target"
+systemctl set-default multi-user.target
+systemctl enable mediaplayer_nb
+
 #omxplaxer und joystick installieren
 echo "Installiere Packages"
 apt-get -y install omxplayer joystick fbi sqlite3
 if [ $? -eq 0 ]
 then
-   echo "Installation ist abgeschlossen"
+   echo "Installation ist abgeschlossen. Zum Testen bitte Rebooten"
 else
    echo "Fehler: Nicht alle Packages konnten installiert werden"
 fi
