@@ -1,2 +1,2 @@
-# python_raspberrypi
-Anleitungen zu RaspberryPis
+# python_mediaplayer
+Code und Anleitung für Python Mediaplayer
